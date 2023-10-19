@@ -549,4 +549,45 @@ dt{
   text-decoration: none;
 }
 
+/* -------------------------------------ADMIN-------------------------------------------- */
+.Admin-title{
+    color: var(--fifth-color);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
 
+.main-form{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.main-table-admin{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.Table-image img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Table-Title{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Table-description{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Table-Price{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Table-category{
+    font-size: 1rem;
+    text-align: center;
+}
