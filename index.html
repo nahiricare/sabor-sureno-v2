@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <!--------------------------FONT AWESOME-------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --------------------- CSS BOOTSTRAP--------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- ------------------------GOOGLE FONTS-------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lobster+Two&display=swap" rel="stylesheet">
+<!-- -----------------HOJA DE ESTILOS DE MI PROYECTO------------ -->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- =============================================================== -->
+    <!-- ==============================HEADER=========================== -->
+    <!-- =============================================================== -->
+<header class="main-header">
+<!-- --------------------- INICIO NAVBAR DE BOOTSTRAP----------------- -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary main-navbar fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/assets/brand/Logo-Mate.png" title="Logo-mate-sabor-sureño" alt="Logo-mate-sabor-sureño" class="main-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Pages/about-us/about-us.html">Acerca de Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Pages/contact/contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Pages/register/register.html">Registro</a>
+          </li>
+        </ul>
+          <div class="icon-container">
+            <img class="header-icons" class="collapse navbar-collapse" src="/assets/icons/Carrito-compras-rosa-violeta.png" alt="Carrito-de-compras" title="Carrito-compras-rosa-violeta">
+            <div class="name-user">Nahir Icare</div>
+            <img class="header-icons" src="/assets/icons/user-logo.png" alt="user-logo" title="user-logo">
+          </div>
+      </div>
+    </div>
+  </nav>
+<!-- --------------------- FIN NAVBAR DE BOOTSTRAP----------------- -->
+</header>
+    <!-- ----------------------------Inicio del Carrousel------------------------------->
+    <div id="main-carrousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/Imagen/Foto-carrousel-1-V2.png" class="d-block w-100" alt="Foto de mate y montañas" title="Mate y montañas">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Imagen/Foto-carrousel-2.jpg" class="d-block w-100" alt="Presentación mate frutal" title="Mate frutal">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Imagen/Foto-carrousel-3.jpg" class="d-block w-100" alt="Distintas yerbas" title="Elegi la tuya">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/Imagen/Foto-carrousel-4.jpg" class="d-block w-100" alt="Té Verde de la patagonia" title="Té verde sencha">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+</div>
+        <!-- ----------------------------FIN del Carrousel------------------------------->
+
+<!-- ================================================================================== -->
+<!-- =========================================MAIN===================================== -->
+<!-- ================================================================================== -->
+<main class="main-container">
+<!-- -------------------------------INICIO MENSAJE BIENVENIDA--------------------------- -->
+<section class="main-banner">
+  <div class="main-info">
+    <h1>La magia de la Patagonia en tu mate</h1>
+    <h2>¡Bienvenidos a Sabor Sureño! <br>
+      Descubre los Sabores Únicos de la Patagonia</h2>
+  </div>
+<div class="main-welcome">
+  <p>En <strong>Sabor Sureño</strong>, te invitamos a embarcarte en un viaje de sabores que te llevará a los impresionantes paisajes de la <strong> Patagonia</strong>. <br>
+    Nuestra pasión es brindarte una experiencia inigualable a través de los exquisitos aromas y las infusiones reconfortantes de yerba mate y té que solo esta región puede ofrecer.
+    Cada sorbo es una conexión directa con la <strong> naturaleza </strong> y la riqueza cultural de la <strong> Patagonia</strong>. <br>
+    Nuestros productos son seleccionados con dedicación y cuidado, garantizando la calidad y autenticidad que mereces. <br>
+    Desde los suelos montañosos hasta los vientos frescos del sur, cada hoja de yerba mate y cada mezcla de té cuentan una historia única y estamos emocionados de compartirlos con ustedes.</p>
+<h3><em>Explora, Saborea, Conecta</em></h3>
+      <p>
+      Adéntrate en nuestro catálogo y descubre la <em>variedad de yerba mate y té</em> que tenemos para ofrecerte. Ya sea que busques un momento de relajación tranquila o quieras compartir estas delicias con amigos y familiares, en <strong>Sabor Sureño</strong> encontrarás la esencia misma de la <strong>Patagonia</strong> en cada bolsita y cada mate. <br>
+      Te invitamos a unirte a nosotros en esta experiencia única. <br>
+      ¡Bienvenido a <strong>Sabor Sureño</strong>, donde cada sorbo es un viaje a la <strong>Patagonia!</strong></p>
+</div>
+</section>
+<!-- -------------------------------FIN MENSAJE DE BIENVENIDA---------------------------- -->
+<div class="main-products">
+<h2>Conoce nuectros productos</h2>
+</div>
+<!-- -----------------------------1RA CARD PRODUCTS: MATES CERAMICA---------------------- -->
+<section class="card-container">
+  <article class="card">
+    <div class="card-header">
+        <figure>
+            <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/assets/Imagen/producto-1-mate-ceramica.jpg" class="d-block w-100" alt="coleccion-mates-ceramica" title="mate-ceramica">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/Mate-Amarillo-Limon.jpg" class="d-block w-100" alt="Mate-Amarillo-Limon" title="Mate-Amarillo-Limon">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/Mate-Aqua.jpg" class="d-block w-100" alt="Mate-Aqua" title="Mate-Aqua">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/Mate-Azul-Francia.jpg" class="d-block w-100" alt="Mate-Azul-Francia" title="Mate-Azul-Francia">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/mate-negro-final.jpg" class="d-block w-100" alt="Mate-negro" title="Mate-negro">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/Mate-Rojo-Carmesi.jpg" class="d-block w-100" alt="Mate-Rojo-Carmesi" title="Mate-Rojo-Carmesi">
+                </div>
+                <div class="carousel-item">
+                  <img src="/assets/Imagen/Mate-Rosa-Dior.jpg" class="d-block w-100" alt="Mate-Rosa-Dior" title="Mate-Rosa-Dior">
+                </div>
+              </div>
+            </div>
+      </figure>
+      <div class="Card-image-title">
+          <h2>Sumergite en la magia de un auténtico mate.</h2>
+      </div>
+  </div>
+  <div class="card-main">
+      <h2>Mates de Ceramica</h2>
+      <div class="card-description">
+          <p>Una fusión de arte y diseño. <br>
+            Conservan la temperatura del agua a lo largo de las cebadas, garantizando que cada momento sea perfecto. <br>
+            Contamos con amplia variedad de colores ¡Elegi el tuyo!
+          </p>
+      </div>
+  <div class="card-prices">
+      <div class="card-dates">
+          <h3>Nuevo Ingreso!</h3>
+          <p>29 de Agosto de 2023</p>
+      </div>
+      <div class="card-price">$4500</div>
+  </div>
+</div>
+  <div class="card-footer">
+      <button class="card-ditails">Ver mas</button>
+      <button class="card-buy">Comprar</button>
+  </div>
+</article>
+<!-- -----------------------------2DA CARD PRODUCTS: BOMBILLAS------------------------------ -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/Bombilla-corazon.jpeg" class="d-block w-100" alt="Bombilla-corazon" title="Bombilla-corazon">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/producto-2-bombilla-corazon.jpg" class="d-block w-100" alt="prod-2-bombilla-corazon" title="prod-2-bombilla-corazon">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/bombilla-grabada.png" class="d-block w-100" alt="bombilla-grabada" title="bombilla-grabada">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/bombilla-cai.png" class="d-block w-100" alt="Bombilla-grabada-cai" title="Bombilla-grabada-cai">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Cada sorbo marcado por el significado que elijas</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Bombillas Grabadas</h2>
+    <div class="card-description">
+        <p>Grabado de bombillas chatas <br>
+          Adorna tu bombilla, hacela especial
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>25 de Agosto de 2023</p>
+    </div>
+    <div class="card-price">$2500</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ------------------------------3RA CARD PRODUCTS: TOPPINGS MATE---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-3-mate-topping.jpeg" class="d-block w-100" alt="Prod-3-toppings-mate" title="Prod-3-toppings-mate">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-1.jpg" class="d-block w-100" alt="mate-topping-1" title="mate-topping-1">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-2.jpg" class="d-block w-100" alt="mate-topping-2" title="mate-topping-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-3.jpg" class="d-block w-100" alt="mate-topping-3" title="mate-topping-3">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-4.jpg" class="d-block w-100" alt="mate-topping-4" title="mate-topping-4">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-5.jpg" class="d-block w-100" alt="mate-topping-5" title="mate-topping-5">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/mate-topping-6.jpg" class="d-block w-100" alt="mate-topping-6" title="mate-topping-6">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Lleva tus cebadas a otro nivel</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Toppings para yerba</h2>
+    <div class="card-description">
+        <p>Mezclas cuidadosamente elaboradas, pensadas para realzar y complementar los sabores naturales de la yerba mate. <br>
+          Sabores refrescantes, dulces o con especias <br>
+          Tu mate, tu elección, tu sabor único.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>20 de Julio de 2023</p>
+    </div>
+    <div class="card-price">$2100</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ------------------------------4TA CARD PRODUCTS: YERBA ORGANICA---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-4-yerba-organica .jpeg" class="d-block w-100" alt="producto-4-yerba-organica" title="producto-4-yerba-organica">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/Yerba-organica-1.jpg" class="d-block w-100" alt="yerba-organica" title="yerba-organica">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Sumergite en la pureza de la naturaleza</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Yerba Organica</h2>
+    <div class="card-description">
+        <p> Yerba mate en su forma más genuina con su bolsa 100% compostable <br>
+          El equilibrio perfecto entre el sabor, ecología y bienestar.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>17 de Mayo de 2023</p>
+    </div>
+    <div class="card-price">$3500</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ------------------------------5TA CARD PRODUCTS: TE SAQUITOS---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-5-te-saquitos.png" class="d-block w-100" alt="te-en-saquitos" title="te-en-saquitos">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-1.png" class="d-block w-100" alt="te-en-saquitos-1"title="te-en-saquitos-1">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-2.png" class="d-block w-100" alt="te-en-saquitos-2" title="te-en-saquitos-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-3.png" class="d-block w-100" alt="te-en-saquitos-3" title="te-en-saquitos-3">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-4.png" class="d-block w-100" alt="te-en-saquitos-4" title="te-en-saquitos-4">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-5.png" class="d-block w-100" alt="te-en-saquitos-5" title="te-en-saquitos-5">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-saquitos-6.png" class="d-block w-100" alt="te-en-saquitos-6" title="te-en-saquitos-6">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>El alma de la patagonia en una taza de té</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Saquitos de té Patagonia</h2>
+    <div class="card-description">
+        <p>Explora la riqueza de la patagonia en cada sorbo. <br>
+          Cada infusión captura la esencia de la región llevándote en un viaje de sabores auténticos inspirados en esta tierra única.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>20 de Abril de 2023</p>
+    </div>
+    <div class="card-price">$1000</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ------------------------------6TA CARD PRODUCTS: TE HEBRAS---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-6-te-en-hebras-doy-paq.png" class="d-block w-100" alt="te-en-hebras-dp" title="te-en-hebras-dp">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-1.png" class="d-block w-100" alt="te-en-hebras-1"title="te-en-hebras-1">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-2.png" class="d-block w-100" alt="te-en-hebras-2" title="te-en-hebras-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-3.png" class="d-block w-100" alt="te-en-hebras-3" title="te-en-hebras-3">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-4.png" class="d-block w-100" alt="te-en-hebras-4" title="te-en-hebras-4">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-5.png" class="d-block w-100" alt="te-en-hebras-5" title="te-en-hebras-5">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-6.png" class="d-block w-100" alt="te-en-hebras-6" title="te-en-hebras-6">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Hebras de magia patagonica</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Té en hebras Doy Pack</h2>
+    <div class="card-description">
+        <p>Desde los majestuosos picos de montaña hasta los vientos frescos del sur, cada sorbo te sumerge en la esencia misma de la patagonia. <br>
+          Despierte sus sentidos con cada infusion.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>29 de Abril de 2022</p>
+    </div>
+    <div class="card-price">$2800</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ----------------------------7TA CARD PRODUCTS: TE HEBRAS PREMIUM---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-7-te-en-hebras.jpg" class="d-block w-100" alt="te-en-hebras-lata" title="te-en-hebras-lata">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-lata-1.png" class="d-block w-100" alt="te-en-hebras-lata-1"title="te-en-hebras-lata-1">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-lata-2.png" class="d-block w-100" alt="te-en-hebras-lata-2" title="te-en-hebras-lata-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-lata-3.png" class="d-block w-100" alt="te-en-hebra-lata-3" title="te-en-hebra-lata-3">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-lata-4.png" class="d-block w-100" alt="te-en-hebra-lata-4" title="te-en-hebra-lata-4">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/te-hebras-lata-5.png" class="d-block w-100" alt="te-en-hebras-lata-5" title="te-en-hebras-lata-5">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Excelencia patagonica en cada lata</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Té en Hebras Lata Premium</h2>
+    <div class="card-description">
+        <p>Cada hoja seleccionada a mano es un tributo a la naturaleza <br>
+        el cuidado artesanal le garantiza una calidad inigualable <br>
+        Eleva tus momentos de calma con este tesoro Patagonico.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>12 de enero de 2023</p>
+    </div>
+    <div class="card-price">$3500</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+<!-- ----------------------------8VA CARD PRODUCTS: YERBA MATE PREMIUM---------------------- -->
+<article class="card">
+  <div class="card-header">
+      <figure>
+          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/Imagen/producto-8-yerba-mate-premium.jpg" class="d-block w-100" alt="yerba-mate-doy-pack" title="yerba-mate-doy-pack">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/yerba-mate-premium-1.png" class="d-block w-100" alt="yerba-mate-premium-1 title="yerba-mate-premium-1>
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/yerba-mate-premium-2.png" class="d-block w-100" alt="yerba-mate-premium-2" title="yerba-mate-premium-2">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/yerba-mate-premium-3.png" class="d-block w-100" alt="yerba-mate-premium-3" title="yerba-mate-premium-3">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/Imagen/yerba-mate-premium-4.png" class="d-block w-100" alt="yerba-mate-premium-4" title="yerba-mate-premium-4">
+              </div>
+            </div>
+          </div>
+    </figure>
+    <div class="Card-image-title">
+        <h2>Energía Patagonica</h2>
+    </div>
+</div>
+<div class="card-main">
+    <h2>Yerba Mate Premium Patagonia</h2>
+    <div class="card-description">
+        <p>Desde los paisajes del sur, la mezcla excepcional te transporta hacia hermosos paisajes. <br>
+          vitalidad y tradicion en cada cebada, en cualquier momento y en cualquier lugar.
+        </p>
+    </div>
+<div class="card-prices">
+    <div class="card-dates">
+        <h3>Nuevo Ingreso!</h3>
+        <p>03 de Febrero de 2023</p>
+    </div>
+    <div class="card-price">$3000</div>
+</div>
+</div>
+<div class="card-footer">
+    <button class="card-ditails">Ver mas</button>
+    <button class="card-buy">Comprar</button>
+</div>
+</article>
+</section>
+<!-- --------------------------------- INCIO PROMOCIONES------------------------------------ -->
+<div class="promotion-title">
+  <h2>¿Por que elegirnos?</h2>
+<section class="main-promotions">
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <i class="fa-solid fa-crown fa-2xl" style="color: #374738;"></i>
+            <h3>Productos de Calidad Premium</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+        <div class="accordion-body">
+            <p>
+                En <strong>Sabor Sureño</strong>, nuestra dedicación a brindar lo mejor es lo más importante: seleccionamos y elaboramos nuestros productos con esmero, arraigados en la región patagónica para garantizar la máxima calidad. <br>
+                Colaboramos estrechamente con pequeños productores y cosecheros locales que aseguran que cada hoja de yerba mate y cada hebra de té alcancen su punto máximo de sabor y aroma. <br>
+                Cada paso de nuestro proceso, desde la selección hasta la preparación, es realizado de manera artesanal. <br>
+                Nuestros catadores expertos trabajan en conjunto con los productores para mantener estándares de calidad exigentes en cada punto del proceso. <br>
+                Sabemos que la frescura es el alma de un buen mate y té, por lo que empacamos nuestros productos con esmero para preservar sus sabores y aromas originales. <br>
+                Cuando eliges <strong>Sabor Sureño</strong>, estás eligiendo la excelencia en su forma más refinada. Ya sea que disfrutes de una yerba mate tradicional o las notas sutiles de nuestras mezclas de té únicas, cada infusión es un testimonio de nuestra pasión por ofrecer productos superiores.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <i class="fa-solid fa-recycle fa-2xl" style="color: #374738;"></i>
+          <h3>Amigables con el Medioambiente</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+        <div class="accordion-body">
+            <p>En <strong>Sabor Sureño</strong>, creemos en un compromiso más allá del sabor. <br>
+                No solo nuestras yerbas y té brindan una experiencia sensorial excepcional, sino que también reflejan nuestro profundo respeto por el medioambiente. <br> Trabajamos en armonía con la naturaleza a través de un cultivo sostenible que respeta el ecosistema de la región. <br> Desde la siembra hasta la cosecha, nuestra prioridad es minimizar el impacto en el entorno y preservar la biodiversidad.<br>También contamos con empaques con materiales responsables y reciclables, reduciendo nuestra huella de carbono y minimizando el desperdicio.<br> Al trabajar con comunidades locales en la Patagonia, promovemos prácticas sostenibles y apoyamos el desarrollo de la producción local, contribuyendo así a la conservación y protección de esta región única.<br>Al elegir nuestras yerbas y té, estás eligiendo una conexión más profunda con la naturaleza. Cada sorbo es una declaración de tu compromiso con un futuro más verde y sostenible. Te invitamos a unirte a nosotros en esta búsqueda de equilibrio entre el placer y la responsabilidad ambiental. <br> Juntos, podemos hacer una diferencia, una taza a la vez.
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <i class="fa-solid fa-truck fa-2xl" style="color: #374738;"></i>
+            <h3>Envios a todo el país con un toque de distinción</h3>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+        <div class="accordion-body">
+            <p> En <strong>Sabor Sureño</strong>, la calidad no solo reside en nuestros productos, sino también en cada detalle de tu experiencia. Nuestro compromiso de brindarte lo mejor se refleja en nuestra oferta de envíos a todo el país, acompañados de un packaging especial que agrega un toque de distinción a cada entrega. <br>
+            Imagina recibir un paquete que es más que un simple envío: es un regalo que te haces a ti mismo, lleno de autenticidad y dedicación. <br>
+            Cada producto es cuidadosamente colocado en un empaque diseñado para proteger su frescura y realzar su belleza: nuestra pasión por la perfección se extiende al proceso de empaque. <br>
+            Cada caja está meticulosamente elaborada para que, al abrirla, descubras no solo los sabores excepcionales de la Patagonia, sino también la elegancia de un diseño cuidadosamente pensado. <br>
+            No importa dónde te encuentres en el país, nuestros envíos llegan a tu puerta con la promesa de una experiencia única. Cada entrega es un recordatorio de que la calidad es más que un producto, es un viaje sensorial que valoramos y protegemos desde que sale de nuestras manos hasta que llega a las tuyas. <br>
+            Disfruta de la comodidad de recibir tus infusiones favoritas en la puerta de tu hogar u oficina, acompañadas de un packaging que realza la magia que hay en cada paquete. En <strong>Sabor Sureño</strong>, tu satisfacción es nuestra prioridad, y estamos emocionados de llevar la esencia de la Patagonia hasta ti, con cada envío y cada detalle. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- --------------------------------- FIN PROMOCIONES------------------------------------ -->
+</main>
+<!-- ========================================================= -->
+<!-- ========================FOOTER=========================== -->
+<!-- ========================================================= -->
+<footer class="container-fluid footer-container">
+  <div class="container">
+      <div class="row pb-2 pt-2">
+          <div class="col-12 col-md-6 col-lg-4 logo-footer">
+              <img src="/assets/brand/Logo-Mate.png" alt="Logo-sabor-sureño" title="Logo-sabor-sureño">
+              <h4>Copyright © Sabor Sureño</h4>
+              <p><a href="/Pages/term-y-cond/term-y-cond.html"> Terminos y Condiciones</a></p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 footer-redes">
+              <h4>Seguinos!</h4>
+              <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+              <a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a>
+              <a href="#"> <i class="fa-brands fa-youtube"></i> Youtube</a>
+              <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 term-footer">
+            <h4>Visitanos</h4>
+              <p>9 de Julio y Albarracin <br> San Carlos de Bariloche <br> Rio Negro - Argentina</p>
+              <h4>Más Información</h4>
+              <p>Nahir Icare <br> nahir.icare@gmail.com</p>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- -----------------SCRIPT DE BOOTSTRAP------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
