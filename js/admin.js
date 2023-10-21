@@ -1,9 +1,3 @@
-const formularioProductoHTML = document.getElementById("Product-form");
-
-formularioProductoHTML.addEventListener('submit', () => {
-    alert('Evento Submit')
-})
-
 
 const Productos = [
     {
@@ -71,6 +65,40 @@ const Productos = [
         categoria: 'Yerbas y toppings'
     }
 ];
+
+// -------------------CAPTAR LOS DATOS DE UN FORMULARIO Y GUARDARLOS EN UN ARRAY----
+
+const formularioProductoHTML = document.getElementById("Product-form");
+
+formularioProductoHTML.addEventListener('submit', (eventoEjecutado) => {
+    eventoEjecutado.preventDefault()
+    console.dir(formularioProductoHTML.elements.TituloProducto.value)
+    console.dir(formularioProductoHTML.elements.ImagenProducto.value)
+    console.dir(formularioProductoHTML.elements.DescripcionDelProducto.value)
+    console.dir(formularioProductoHTML.elements.PrecioProducto.value)
+    console.dir(formularioProductoHTML.elements.categoriaProductos.value)
+})
+const datosFormulario = formularioProductoHTML.elements;
+const fecha = new Date()
+const mes = fecha.getMonth() + 1
+const year = fecha.getFullYear()
+const dia = fecha.getDate()
+
+const nuevoProducto = {
+    titulo: datosFormulario.TituloProducto.value,
+    Imagen: datosFormulario.ImagenProducto.value,
+    Descripcion: datosFormulario.DescripcionDelProducto.value,
+    precio: datosFormulario.PrecioProducto.value,
+    categoria: datosFormulario.categoriaProductos.value,
+    fechaDeCreacion: `${year} - ${mes} - ${dia}`,
+}
+
+Productos.push(nuevoProducto)
+
+console.log(Productos)
+
+
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const tableBodyElements = document.querySelectorAll(".main-table-admin");
