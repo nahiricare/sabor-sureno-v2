@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de Nosotros</title>
+    <title>Principal</title>
     <!--------------------------FONT AWESOME-------------------- -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- --------------------- CSS BOOTSTRAP--------------------- -->
@@ -14,44 +14,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lobster+Two&display=swap" rel="stylesheet">
 <!-- -----------------HOJA DE ESTILOS DE MI PROYECTO------------ -->
     <link rel="stylesheet" href="/css/styles.css">
+        <!-- ----------SWEET ALERT----------- -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <!-- =============================================================== -->
     <!-- ==============================HEADER=========================== -->
     <!-- =============================================================== -->
-<header class="main-header">
-<!-- --------------------- INICIO NAVBAR DE BOOTSTRAP----------------- -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary main-navbar fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="/index.html">
-        <img src="/assets/brand/Logo-Mate.png" title="Logo-mate-sabor-sureño" alt="Logo-mate-sabor-sureño" class="main-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/Pages/about-us/about-us.html">Acerca de Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Pages/contact/contact.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Pages/register/register.html">Registro</a>
-          </li>
-        </ul>
-          <div class="icon-container">
-            <img class="header-icons" class="collapse navbar-collapse" src="/assets/icons/Carrito-compras-rosa-violeta.png" alt="Carrito-de-compras" title="Carrito-compras-rosa-violeta">
-            <div class="name-user">Nahir Icare</div>
-            <img class="header-icons" src="/assets/icons/user-logo.png" alt="user-logo" title="user-logo">
+    <header class="main-header">
+      <!-- --------------------- INICIO NAVBAR DE BOOTSTRAP----------------- -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary main-navbar fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+              <img src="/assets/brand/Logo-Mate.png" title="Logo-mate-sabor-sureño" alt="Logo-mate-sabor-sureño" class="main-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/Pages/about-us/about-us.html"> Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/contact/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/Pages/register/register.html">Registro</a>
+                </li>
+                <li class="nav-item" id="nav-admin-product">
+                 </li>
+                  <li class="nav-item" id="nav-admin-users">
+      
+                  </li>
+              </ul>
+      
+                <div class="icon-container">
+                  <img class="header-icons" class="collapse navbar-collapse" src="/assets/icons/Carrito-compras-rosa-violeta.png" alt="Carrito-de-compras" title="Carrito-compras-rosa-violeta">
+                  <div id="user-header-name" class="name-user"></div>
+                  <img class="header-icons" src="/assets/icons/user-logo.png" alt="user-logo" title="user-logo">
+                  <div id="user-action">
+                  </div>
+                </div>
+      
+      
+            </div>
           </div>
-      </div>
-    </div>
-  </nav>
-<!-- --------------------- FIN NAVBAR DE BOOTSTRAP----------------- -->
-</header>
-
+            </div>
+          </div>
+        </nav>
+      <!-- --------------------- FIN NAVBAR DE BOOTSTRAP----------------- -->
+      </header>
 <!-- -------------------------------------------BASE DE CONTACT.----------------- -->
 <main class="main-container container-xl">
   <h1 class="about-us-titulo">Acerca de Nosotros</h1>
@@ -106,7 +120,9 @@
       </div>
   </div>
 </footer>
-    <!-- -----------------SCRIPT DE BOOTSTRAP------------------ -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<!-- -----------------SCRIPT DE BOOTSTRAP------------------ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+<script src="/js/user-info.js"></script>
 </body>
 </html>

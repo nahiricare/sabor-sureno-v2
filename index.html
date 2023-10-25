@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Principal</title>
@@ -14,6 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lobster+Two&display=swap" rel="stylesheet">
 <!-- -----------------HOJA DE ESTILOS DE MI PROYECTO------------ -->
     <link rel="stylesheet" href="/css/styles.css">
+        <!-- ----------SWEET ALERT----------- -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 <body>
     <!-- =============================================================== -->
@@ -30,9 +33,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul id="nav-list" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/Pages/about-us/about-us.html">Acerca de Nosotros</a>
+            <a class="nav-link" aria-current="page" href="/Pages/about-us/about-us.html"> Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/Pages/contact/contact.html">Contacto</a>
@@ -40,12 +43,24 @@
           <li class="nav-item">
             <a class="nav-link" href="/Pages/register/register.html">Registro</a>
           </li>
+          <li class="nav-item" id="nav-admin-product">
+           </li>
+            <li class="nav-item" id="nav-admin-users">
+
+            </li>
         </ul>
+
           <div class="icon-container">
             <img class="header-icons" class="collapse navbar-collapse" src="/assets/icons/Carrito-compras-rosa-violeta.png" alt="Carrito-de-compras" title="Carrito-compras-rosa-violeta">
-            <div class="name-user">Nahir Icare</div>
+            <div id="user-header-name" class="name-user"></div>
             <img class="header-icons" src="/assets/icons/user-logo.png" alt="user-logo" title="user-logo">
+            <div id="user-action">
+            </div>
           </div>
+
+
+      </div>
+    </div>
       </div>
     </div>
   </nav>
@@ -54,38 +69,37 @@
     <!-- ----------------------------Inicio del Carrousel------------------------------->
     <div id="main-carrousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#main-carrousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#main-carrousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#main-carrousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#main-carrousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
-
+    
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="/assets/Imagen/Foto-carrousel-1-V2.png" class="d-block w-100" alt="Foto de mate y montañas" title="Mate y montañas">
         </div>
         <div class="carousel-item">
-          <img src="/assets/Imagen/Foto-carrousel-2.jpg" class="d-block w-100" alt="Presentación mate frutal" title="Mate frutal">
+          <img src="/assets/Imagen/Foto-carrousel-2.jpg" class= "d-block w-100" alt="Presentación mate frutal" title="Mate frutal">
         </div>
         <div class="carousel-item">
-          <img src="/assets/Imagen/Foto-carrousel-3.jpg" class="d-block w-100" alt="Distintas yerbas" title="Elegi la tuya">
+          <img src="/assets/Imagen/Foto-carrousel-3.jpg" class="d-block w-100" alt="Distintas yerbas" title="Elegí la tuya">
         </div>
         <div class="carousel-item">
           <img src="/assets/Imagen/Foto-carrousel-4.jpg" class="d-block w-100" alt="Té Verde de la patagonia" title="Té verde sencha">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#main-carrousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#main-carrousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
-  </div>
-</div>
-        <!-- ----------------------------FIN del Carrousel------------------------------->
+
+<!-- ----------------------------FIN del Carrousel------------------------------->
 
 <!-- ================================================================================== -->
 <!-- =========================================MAIN===================================== -->
@@ -116,408 +130,8 @@
 <h2>Conoce nuectros productos</h2>
 </div>
 <!-- -----------------------------1RA CARD PRODUCTS: MATES CERAMICA---------------------- -->
-<section class="card-container">
-  <article class="card">
-    <div class="card-header">
-        <figure>
-            <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="/assets/Imagen/producto-1-mate-ceramica.jpg" class="d-block w-100" alt="coleccion-mates-ceramica" title="mate-ceramica">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/Mate-Amarillo-Limon.jpg" class="d-block w-100" alt="Mate-Amarillo-Limon" title="Mate-Amarillo-Limon">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/Mate-Aqua.jpg" class="d-block w-100" alt="Mate-Aqua" title="Mate-Aqua">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/Mate-Azul-Francia.jpg" class="d-block w-100" alt="Mate-Azul-Francia" title="Mate-Azul-Francia">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/mate-negro-final.jpg" class="d-block w-100" alt="Mate-negro" title="Mate-negro">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/Mate-Rojo-Carmesi.jpg" class="d-block w-100" alt="Mate-Rojo-Carmesi" title="Mate-Rojo-Carmesi">
-                </div>
-                <div class="carousel-item">
-                  <img src="/assets/Imagen/Mate-Rosa-Dior.jpg" class="d-block w-100" alt="Mate-Rosa-Dior" title="Mate-Rosa-Dior">
-                </div>
-              </div>
-            </div>
-      </figure>
-      <div class="Card-image-title">
-          <h2>Sumergite en la magia de un auténtico mate.</h2>
-      </div>
-  </div>
-  <div class="card-main">
-      <h2>Mates de Ceramica</h2>
-      <div class="card-description">
-          <p>Una fusión de arte y diseño. <br>
-            Conservan la temperatura del agua a lo largo de las cebadas, garantizando que cada momento sea perfecto. <br>
-            Contamos con amplia variedad de colores ¡Elegi el tuyo!
-          </p>
-      </div>
-  <div class="card-prices">
-      <div class="card-dates">
-          <h3>Nuevo Ingreso!</h3>
-          <p>29 de Agosto de 2023</p>
-      </div>
-      <div class="card-price">$4500</div>
-  </div>
-</div>
-  <div class="card-footer">
-      <button class="card-ditails">Ver mas</button>
-      <button class="card-buy">Comprar</button>
-  </div>
-</article>
-<!-- -----------------------------2DA CARD PRODUCTS: BOMBILLAS------------------------------ -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/Bombilla-corazon.jpeg" class="d-block w-100" alt="Bombilla-corazon" title="Bombilla-corazon">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/producto-2-bombilla-corazon.jpg" class="d-block w-100" alt="prod-2-bombilla-corazon" title="prod-2-bombilla-corazon">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/bombilla-grabada.png" class="d-block w-100" alt="bombilla-grabada" title="bombilla-grabada">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/bombilla-cai.png" class="d-block w-100" alt="Bombilla-grabada-cai" title="Bombilla-grabada-cai">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Cada sorbo marcado por el significado que elijas</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Bombillas Grabadas</h2>
-    <div class="card-description">
-        <p>Grabado de bombillas chatas <br>
-          Adorna tu bombilla, hacela especial
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>25 de Agosto de 2023</p>
-    </div>
-    <div class="card-price">$2500</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ------------------------------3RA CARD PRODUCTS: TOPPINGS MATE---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-3-mate-topping.jpeg" class="d-block w-100" alt="Prod-3-toppings-mate" title="Prod-3-toppings-mate">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-1.jpg" class="d-block w-100" alt="mate-topping-1" title="mate-topping-1">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-2.jpg" class="d-block w-100" alt="mate-topping-2" title="mate-topping-2">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-3.jpg" class="d-block w-100" alt="mate-topping-3" title="mate-topping-3">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-4.jpg" class="d-block w-100" alt="mate-topping-4" title="mate-topping-4">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-5.jpg" class="d-block w-100" alt="mate-topping-5" title="mate-topping-5">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/mate-topping-6.jpg" class="d-block w-100" alt="mate-topping-6" title="mate-topping-6">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Lleva tus cebadas a otro nivel</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Toppings para yerba</h2>
-    <div class="card-description">
-        <p>Mezclas cuidadosamente elaboradas, pensadas para realzar y complementar los sabores naturales de la yerba mate. <br>
-          Sabores refrescantes, dulces o con especias <br>
-          Tu mate, tu elección, tu sabor único.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>20 de Julio de 2023</p>
-    </div>
-    <div class="card-price">$2100</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ------------------------------4TA CARD PRODUCTS: YERBA ORGANICA---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-4-yerba-organica .jpeg" class="d-block w-100" alt="producto-4-yerba-organica" title="producto-4-yerba-organica">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/Yerba-organica-1.jpg" class="d-block w-100" alt="yerba-organica" title="yerba-organica">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Sumergite en la pureza de la naturaleza</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Yerba Organica</h2>
-    <div class="card-description">
-        <p> Yerba mate en su forma más genuina con su bolsa 100% compostable <br>
-          El equilibrio perfecto entre el sabor, ecología y bienestar.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>17 de Mayo de 2023</p>
-    </div>
-    <div class="card-price">$3500</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ------------------------------5TA CARD PRODUCTS: TE SAQUITOS---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-5-te-saquitos.png" class="d-block w-100" alt="te-en-saquitos" title="te-en-saquitos">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-1.png" class="d-block w-100" alt="te-en-saquitos-1"title="te-en-saquitos-1">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-2.png" class="d-block w-100" alt="te-en-saquitos-2" title="te-en-saquitos-2">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-3.png" class="d-block w-100" alt="te-en-saquitos-3" title="te-en-saquitos-3">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-4.png" class="d-block w-100" alt="te-en-saquitos-4" title="te-en-saquitos-4">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-5.png" class="d-block w-100" alt="te-en-saquitos-5" title="te-en-saquitos-5">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-saquitos-6.png" class="d-block w-100" alt="te-en-saquitos-6" title="te-en-saquitos-6">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>El alma de la patagonia en una taza de té</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Saquitos de té Patagonia</h2>
-    <div class="card-description">
-        <p>Explora la riqueza de la patagonia en cada sorbo. <br>
-          Cada infusión captura la esencia de la región llevándote en un viaje de sabores auténticos inspirados en esta tierra única.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>20 de Abril de 2023</p>
-    </div>
-    <div class="card-price">$1000</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ------------------------------6TA CARD PRODUCTS: TE HEBRAS---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-6-te-en-hebras-doy-paq.png" class="d-block w-100" alt="te-en-hebras-dp" title="te-en-hebras-dp">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-1.png" class="d-block w-100" alt="te-en-hebras-1"title="te-en-hebras-1">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-2.png" class="d-block w-100" alt="te-en-hebras-2" title="te-en-hebras-2">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-3.png" class="d-block w-100" alt="te-en-hebras-3" title="te-en-hebras-3">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-4.png" class="d-block w-100" alt="te-en-hebras-4" title="te-en-hebras-4">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-5.png" class="d-block w-100" alt="te-en-hebras-5" title="te-en-hebras-5">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-6.png" class="d-block w-100" alt="te-en-hebras-6" title="te-en-hebras-6">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Hebras de magia patagonica</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Té en hebras Doy Pack</h2>
-    <div class="card-description">
-        <p>Desde los majestuosos picos de montaña hasta los vientos frescos del sur, cada sorbo te sumerge en la esencia misma de la patagonia. <br>
-          Despierte sus sentidos con cada infusion.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>29 de Abril de 2022</p>
-    </div>
-    <div class="card-price">$2800</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ----------------------------7TA CARD PRODUCTS: TE HEBRAS PREMIUM---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-7-te-en-hebras.jpg" class="d-block w-100" alt="te-en-hebras-lata" title="te-en-hebras-lata">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-lata-1.png" class="d-block w-100" alt="te-en-hebras-lata-1"title="te-en-hebras-lata-1">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-lata-2.png" class="d-block w-100" alt="te-en-hebras-lata-2" title="te-en-hebras-lata-2">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-lata-3.png" class="d-block w-100" alt="te-en-hebra-lata-3" title="te-en-hebra-lata-3">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-lata-4.png" class="d-block w-100" alt="te-en-hebra-lata-4" title="te-en-hebra-lata-4">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/te-hebras-lata-5.png" class="d-block w-100" alt="te-en-hebras-lata-5" title="te-en-hebras-lata-5">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Excelencia patagonica en cada lata</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Té en Hebras Lata Premium</h2>
-    <div class="card-description">
-        <p>Cada hoja seleccionada a mano es un tributo a la naturaleza <br>
-        el cuidado artesanal le garantiza una calidad inigualable <br>
-        Eleva tus momentos de calma con este tesoro Patagonico.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>12 de enero de 2023</p>
-    </div>
-    <div class="card-price">$3500</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
-<!-- ----------------------------8VA CARD PRODUCTS: YERBA MATE PREMIUM---------------------- -->
-<article class="card">
-  <div class="card-header">
-      <figure>
-          <div id="Card-carousel-products" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="/assets/Imagen/producto-8-yerba-mate-premium.jpg" class="d-block w-100" alt="yerba-mate-doy-pack" title="yerba-mate-doy-pack">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/yerba-mate-premium-1.png" class="d-block w-100" alt="yerba-mate-premium-1 title="yerba-mate-premium-1>
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/yerba-mate-premium-2.png" class="d-block w-100" alt="yerba-mate-premium-2" title="yerba-mate-premium-2">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/yerba-mate-premium-3.png" class="d-block w-100" alt="yerba-mate-premium-3" title="yerba-mate-premium-3">
-              </div>
-              <div class="carousel-item">
-                <img src="/assets/Imagen/yerba-mate-premium-4.png" class="d-block w-100" alt="yerba-mate-premium-4" title="yerba-mate-premium-4">
-              </div>
-            </div>
-          </div>
-    </figure>
-    <div class="Card-image-title">
-        <h2>Energía Patagonica</h2>
-    </div>
-</div>
-<div class="card-main">
-    <h2>Yerba Mate Premium Patagonia</h2>
-    <div class="card-description">
-        <p>Desde los paisajes del sur, la mezcla excepcional te transporta hacia hermosos paisajes. <br>
-          vitalidad y tradicion en cada cebada, en cualquier momento y en cualquier lugar.
-        </p>
-    </div>
-<div class="card-prices">
-    <div class="card-dates">
-        <h3>Nuevo Ingreso!</h3>
-        <p>03 de Febrero de 2023</p>
-    </div>
-    <div class="card-price">$3000</div>
-</div>
-</div>
-<div class="card-footer">
-    <button class="card-ditails">Ver mas</button>
-    <button class="card-buy">Comprar</button>
-</div>
-</article>
+<section id="card-container" class="card-container">
+
 </section>
 <!-- --------------------------------- INCIO PROMOCIONES------------------------------------ -->
 <div class="promotion-title">
@@ -610,5 +224,9 @@
 </footer>
 <!-- -----------------SCRIPT DE BOOTSTRAP------------------ -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script src="/js/admin.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/user-info.js"></script>
 </body>
 </html>

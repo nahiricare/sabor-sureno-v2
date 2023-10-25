@@ -591,3 +591,35 @@ dt{
     font-size: 1rem;
     text-align: center;
 }
+
+.login-container{
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.card-title-login{
+text-align: center;
+margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.boton-login{
+    margin: .5rem;
+}
+
+.registrarse-bottom{
+    margin-top: .75rem;
+}
+
+.registrarse-bottom a{
+    color: #0c0c20a1;
+    font-weight: bold;
+}
+
+.table-users{
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
